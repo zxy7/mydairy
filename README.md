@@ -19,9 +19,10 @@ A. 可量化成长
 ＃算法＃     +1+1
 
 # 目录
-* 是时候展现真正的技术了
-    * [科学上网之ss]()
+* 翻译
     * [译：如何扩展SQLErrorCodesFactory]()
+* 是时候展现真正的技术了
+    * [科学上网之ss](https://github.com/zxy7/mydairy/blob/master/%E6%98%AF%E6%97%B6%E5%80%99%E5%B1%95%E7%8E%B0%E7%9C%9F%E6%AD%A3%E7%9A%84%E6%8A%80%E6%9C%AF%E4%BA%86/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91%E4%B9%8Bss.md)
     * [优化图片加载速度]()
     * [maven+iview项目搭建]()
 * 微信小程序
