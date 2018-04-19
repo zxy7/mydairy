@@ -25,14 +25,16 @@ A. 可量化成长
     * [科学上网之ss](https://github.com/zxy7/mydairy/blob/master/%E6%98%AF%E6%97%B6%E5%80%99%E5%B1%95%E7%8E%B0%E7%9C%9F%E6%AD%A3%E7%9A%84%E6%8A%80%E6%9C%AF%E4%BA%86/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91%E4%B9%8Bss.md)
     * [优化图片加载速度]()
     * [maven+iview项目搭建]()
+    * [结果我真的修了电脑](https://github.com/zxy7/mydairy/blob/master/%E6%98%AF%E6%97%B6%E5%80%99%E5%B1%95%E7%8E%B0%E7%9C%9F%E6%AD%A3%E7%9A%84%E6%8A%80%E6%9C%AF%E4%BA%86/%E7%BB%93%E6%9E%9C%E6%88%91%E7%9C%9F%E7%9A%84%E4%BF%AE%E4%BA%86%E7%94%B5%E8%84%91.md)
 * 微信小程序
     * [微信录音与播放的语音acc文件如何保存]()
-    * [微信小程序要求的 TLS 版本必须大于等于 1.2+https]()
+    * [微信小程序要求的 TLS 版本必须大于等于 1.2+https](https://github.com/zxy7/mydairy/blob/master/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E8%A6%81%E6%B1%82%E7%9A%84%20TLS%20%E7%89%88%E6%9C%AC%E5%BF%85%E9%A1%BB%E5%A4%A7%E4%BA%8E%E7%AD%89%E4%BA%8E%201.2%2Bhttps.md)
     * [小程序集成阿里云语音识别]()
 * 小仙女的日记
     * [博客历史遗留问题]()
     * [命令集合]()
     * [无visa卡注册美国appleid]()
+    * [发现了git的小秘密]()
 * c#
     * [c#项目的发布]()
     * [powerbi报表集成到web项目]()
