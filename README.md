@@ -20,30 +20,30 @@ A. 可量化成长
 
 # 目录
 * 翻译
-    * [译：如何扩展SQLErrorCodesFactory]()
+    * [译：如何扩展SQLErrorCodesFactory](https://github.com/zxy7/mydairy/blob/master/%E7%BF%BB%E8%AF%91/%E8%AF%91%EF%BC%9A%E5%A6%82%E4%BD%95%E6%89%A9%E5%B1%95SQLErrorCodesFactory.md)
 * 是时候展现真正的技术了
     * [科学上网之ss](https://github.com/zxy7/mydairy/blob/master/%E6%98%AF%E6%97%B6%E5%80%99%E5%B1%95%E7%8E%B0%E7%9C%9F%E6%AD%A3%E7%9A%84%E6%8A%80%E6%9C%AF%E4%BA%86/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91%E4%B9%8Bss.md)
-    * [优化图片加载速度]()
-    * [maven+iview项目搭建]()
+    * [优化图片加载速度](https://github.com/zxy7/mydairy/blob/master/%E6%98%AF%E6%97%B6%E5%80%99%E5%B1%95%E7%8E%B0%E7%9C%9F%E6%AD%A3%E7%9A%84%E6%8A%80%E6%9C%AF%E4%BA%86/%E4%BC%98%E5%8C%96%E5%9B%BE%E7%89%87%E5%8A%A0%E8%BD%BD%E9%80%9F%E5%BA%A6.md)
+    * [maven+iview项目搭建](https://github.com/zxy7/mydairy/blob/master/%E6%98%AF%E6%97%B6%E5%80%99%E5%B1%95%E7%8E%B0%E7%9C%9F%E6%AD%A3%E7%9A%84%E6%8A%80%E6%9C%AF%E4%BA%86/maven%2Biview%E9%A1%B9%E7%9B%AE%E6%90%AD%E5%BB%BA.md)
     * [结果我真的修了电脑](https://github.com/zxy7/mydairy/blob/master/%E6%98%AF%E6%97%B6%E5%80%99%E5%B1%95%E7%8E%B0%E7%9C%9F%E6%AD%A3%E7%9A%84%E6%8A%80%E6%9C%AF%E4%BA%86/%E7%BB%93%E6%9E%9C%E6%88%91%E7%9C%9F%E7%9A%84%E4%BF%AE%E4%BA%86%E7%94%B5%E8%84%91.md)
 * 微信小程序
-    * [微信录音与播放的语音acc文件如何保存]()
+    * [微信录音与播放的语音acc文件如何保存](https://github.com/zxy7/mydairy/blob/master/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/%E5%BE%AE%E4%BF%A1%E5%BD%95%E9%9F%B3%E4%B8%8E%E6%92%AD%E6%94%BE%E7%9A%84%E8%AF%AD%E9%9F%B3acc%E6%96%87%E4%BB%B6%E5%A6%82%E4%BD%95%E4%BF%9D%E5%AD%98.md)
     * [微信小程序要求的 TLS 版本必须大于等于 1.2+https](https://github.com/zxy7/mydairy/blob/master/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E8%A6%81%E6%B1%82%E7%9A%84%20TLS%20%E7%89%88%E6%9C%AC%E5%BF%85%E9%A1%BB%E5%A4%A7%E4%BA%8E%E7%AD%89%E4%BA%8E%201.2%2Bhttps.md)
-    * [小程序集成阿里云语音识别]()
+    * [小程序集成阿里云语音识别](https://github.com/zxy7/mydairy/blob/master/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/%E5%B0%8F%E7%A8%8B%E5%BA%8F%E9%9B%86%E6%88%90%E9%98%BF%E9%87%8C%E4%BA%91%E8%AF%AD%E9%9F%B3%E8%AF%86%E5%88%AB.md)
 * 小仙女的日记
-    * [博客历史遗留问题]()
-    * [命令集合]()
-    * [无visa卡注册美国appleid]()
-    * [发现了git的小秘密]()
+    * [博客历史遗留问题](https://github.com/zxy7/mydairy/blob/master/%E5%B0%8F%E4%BB%99%E5%A5%B3%E7%9A%84%E6%97%A5%E8%AE%B0/%E5%8D%9A%E5%AE%A2%E5%8E%86%E5%8F%B2%E9%81%97%E7%95%99%E9%97%AE%E9%A2%98.md)
+    * [命令集合](https://github.com/zxy7/mydairy/blob/master/%E5%B0%8F%E4%BB%99%E5%A5%B3%E7%9A%84%E6%97%A5%E8%AE%B0/%E5%91%BD%E4%BB%A4%E9%9B%86%E5%90%88.md)
+    * [无visa卡注册美国appleid](https://github.com/zxy7/mydairy/blob/master/%E5%B0%8F%E4%BB%99%E5%A5%B3%E7%9A%84%E6%97%A5%E8%AE%B0/%E6%97%A0visa%E5%8D%A1%E6%B3%A8%E5%86%8C%E7%BE%8E%E5%9B%BDapple%20id.md)
+    * [发现了git的小秘密](https://github.com/zxy7/mydairy/blob/master/%E5%B0%8F%E4%BB%99%E5%A5%B3%E7%9A%84%E6%97%A5%E8%AE%B0/%E5%8F%91%E7%8E%B0%E4%BA%86git%E7%9A%84%E5%B0%8F%E7%A7%98%E5%AF%86.md)
 * c#
-    * [c#项目的发布]()
-    * [powerbi报表集成到web项目]()
+    * [c#项目的发布](https://github.com/zxy7/mydairy/blob/master/c%23/c%23%E9%A1%B9%E7%9B%AE%E7%9A%84%E5%8F%91%E5%B8%83.md)
+    * [powerbi报表集成到web项目](https://github.com/zxy7/mydairy/blob/master/c%23/powerbi%E6%8A%A5%E8%A1%A8%E9%9B%86%E6%88%90%E5%88%B0web%E9%A1%B9%E7%9B%AE.md)
 * java
-    * [研究java.util.Date日期输出格式]()
+    * [研究java.util.Date日期输出格式](https://github.com/zxy7/mydairy/blob/master/java/%E7%A0%94%E7%A9%B6java.util.Date%E6%97%A5%E6%9C%9F%E8%BE%93%E5%87%BA%E6%A0%BC%E5%BC%8F.md)
 * JavaScript
 * python
-    * [第一个python爬虫]()
-    * [python学习--文件压缩备份]()
+    * [第一个python爬虫](https://github.com/zxy7/mydairy/blob/master/python/%E7%AC%AC%E4%B8%80%E4%B8%AApython%E7%88%AC%E8%99%AB.md)
+    * [python学习--文件压缩备份](https://github.com/zxy7/mydairy/blob/master/python/python%E5%AD%A6%E4%B9%A0--%E6%96%87%E4%BB%B6%E5%8E%8B%E7%BC%A9%E5%A4%87%E4%BB%BD.md)
 
 
 ## 2018/1/25
