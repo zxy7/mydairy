@@ -4,3 +4,4 @@
 1. 银联SSL证书5.28前
 1. docker了解一下
 1. apply,call,bind区分
+1. dom操作浏览器如何渲染
