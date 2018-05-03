@@ -42,9 +42,13 @@ A. 可量化成长
 * java
     * [研究java.util.Date日期输出格式](https://github.com/zxy7/mydairy/blob/master/java/%E7%A0%94%E7%A9%B6java.util.Date%E6%97%A5%E6%9C%9F%E8%BE%93%E5%87%BA%E6%A0%BC%E5%BC%8F.md)
 * JavaScript
+    * [apply,call,bind区分]()  
+    * [vue双向绑定]()
+    * [大量修改DOM元素的递归快捷方式]()
 * python
     * [第一个python爬虫](https://github.com/zxy7/mydairy/blob/master/python/%E7%AC%AC%E4%B8%80%E4%B8%AApython%E7%88%AC%E8%99%AB.md)
     * [python学习--文件压缩备份](https://github.com/zxy7/mydairy/blob/master/python/python%E5%AD%A6%E4%B9%A0--%E6%96%87%E4%BB%B6%E5%8E%8B%E7%BC%A9%E5%A4%87%E4%BB%BD.md)
+    * [pdm表结构转json格式]()
 
 
 ## 2018/1/25
