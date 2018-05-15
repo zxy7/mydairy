@@ -1,0 +1,1 @@
+$.emit("functionname",param)相当于全局监听函数
