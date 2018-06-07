@@ -36,3 +36,4 @@ npm ERR! Unexpected token < in JSON at position 253344
 npm ERR! A complete log of this run can be found in:
 npm ERR!     C:\Users\user\AppData\Roaming\npm-cache\_logs\2018-05-22T05_37_57_661Z-debug.log
 解决 delete/rename file package-lock.json
+1. vue项目的浏览器兼容问题

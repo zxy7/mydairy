@@ -1,0 +1,1 @@
+![http://ruanyf.github.io/es-checker/](http://ruanyf.github.io/es-checker/)可以检测浏览器支持es6性能的百分比
