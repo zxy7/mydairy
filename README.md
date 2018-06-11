@@ -45,6 +45,7 @@ A. 可量化成长
     * [apply,call,bind区分]()  
     * [vue双向绑定]()
     * [大量修改DOM元素的递归快捷方式]()
+    * [vue项目的浏览器兼容问题]()
 * python
     * [第一个python爬虫](https://github.com/zxy7/mydairy/blob/master/python/%E7%AC%AC%E4%B8%80%E4%B8%AApython%E7%88%AC%E8%99%AB.md)
     * [python学习--文件压缩备份](https://github.com/zxy7/mydairy/blob/master/python/python%E5%AD%A6%E4%B9%A0--%E6%96%87%E4%BB%B6%E5%8E%8B%E7%BC%A9%E5%A4%87%E4%BB%BD.md)
