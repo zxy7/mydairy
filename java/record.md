@@ -23,3 +23,15 @@
     #{search.getaction,javaType=String,jdbcType=VARCHAR}
   )}
 </select>
+## mybatis 插入数据时返回主键
+<insert id="" useGeneratedKeys="true" keyProperty="id" parameterType="xxbean">   
+  insert into table(parm1,parm2) values (#{parm1}, #{parm2});
+</insert>
+<insert id=""  parameterType="xxbean">
+  insert into test (name) values (#{name})
+  <selectKey keyProperty="id" resultType="java.lang.Integer">
+  select LAST_INSERT_ID() as id
+  </selectKey>
+</insert>
+
+## java sleep用法
