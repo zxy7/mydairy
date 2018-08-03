@@ -31,3 +31,10 @@ gitlab 是给git@xxx.xx.xx.xx:username/projectname.git这个远程仓库取的�
 1. 去github网站的个人设置里的邮箱，添加上你的gitlab邮箱
 1. 此时不管你的git config user.email 设置的是哪个邮箱，都可以commit到github上，以前未出现的contributions就会神奇的点亮。（如果一开始user.email就为空，sorry，救不活了，还是赶紧git config user.email xxx@xx.com设置邮箱）
 1. gitlab同理，把github邮箱添加到个人设置里
+
+
+
+ssh-keygen -t rsa -C "zxygl7@163.com"
+cat a.html
+git diff HEAD -- a.html
+git log --graph
