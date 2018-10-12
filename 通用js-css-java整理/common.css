@@ -97,3 +97,7 @@ body {
   right: 0;
   background-color: purple;
 }
+
+/*
+将 a 的 position 指定为 absolute/relative，指定 display:block，指定 width、height，则 IE 中 a 的无内容区域不可点击,
+解决办法是给 a 指定 background，颜色、图片都可以，设为透明。*/
