@@ -145,8 +145,9 @@
     - 绘制
 1. load事件是等dom，css，js，图片加载完毕，domcontentloaded是html被加载解析
 1. 重绘改变外观不影响布局，回流是布局改变
+1. jquery对象转dom对象 $("#a").get(0),反之，$(dom对象)
 -------------
-1.性能
+1. 性能
     - dns预解析<link rel="dns-prefetch" href="//com">
     - 缓存
         - 强制缓存cache-control，expires，返回200
@@ -164,4 +165,23 @@
     - cdn加载静态资源
     - webpack打包压缩，按路由拆分代码，按需加载const F=（）=>import("")
     - window.onerror报错
-1. xss,跨站脚本攻击，转义
+1. xss,跨站脚本攻击，评论里一个带恶意script，转义，内容安全策略 (CSP），设置 Header 中的 Content-Security-Policy
+1. csrf，验证referer
+-----------
+1. mvvm：model和view独立，由viewmodel作为桥梁只关心数据和业务的处理，不关心view如何处理数据
+    - vue数据劫持：vue遍历data中所有的属性，Object.defineProperty(obj,key,{})实现数据绑定，监听数据的set和get事件，给{{属性}}添加发布订阅，get中添加订阅，set中发布，手动触发一次属性的 getter 来实现发布订阅的添加
+1. 路由：监听url的变化，匹配路由规则，显示页面，无须刷新，由hash模式和history模式
+1. virtual dom：操作dom费时，用js对象模拟dom对象，操作js对象比操作dom省时， diff算法之比对同层节点，O(n)复杂度，局部更新dom
+    - tags字符串，document.createElement(tag)
+    - props对象，el.setAttribute(key, props[key])
+    - children数组，
+    - key唯一表示标识，el.setAttribute('key', key)
+--------------
+1. nextTick是在下次 DOM 更新循环结束之后执行延迟回调
+1. vue生命周期：new vue实例，beforecreate：data，props还没有
+1. 组件
+    - 组件的data必须是函数，每个实例都可以维护return的对象的独立的拷贝，不会影响其他实例
+    - 组件注册：Vue.component全局注册(在根 Vue 实例创建之前发生)，局部注册components：{ComponentA}
+    - 每个组件只有一个根元素
+    - emit方法传入事件名，向父组件触发监听的事件，以修改子组件的prop
+    - v-model是v-bind：value=“x”  v-on：input=“x=$event.target.value”
