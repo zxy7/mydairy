@@ -184,4 +184,36 @@
     - 组件注册：Vue.component全局注册(在根 Vue 实例创建之前发生)，局部注册components：{ComponentA}
     - 每个组件只有一个根元素
     - emit方法传入事件名，向父组件触发监听的事件，以修改子组件的prop
-    - v-model是v-bind：value=“x”  v-on：input=“x=$event.target.value”
+    - v-model是v-bind：value=“x”  v-on：input=“x=$event.target.value”，默认名为value 的prop和input事件
+    - 原生事件v-on：事件名.native修饰符
+    - 动态组件加keep-live缓存
+1. 计算属性computed:{xx:{get:function(){},set:function(){}}，基于它们的依赖进行缓存的，
+    侦听属性watch:{xx:function(){}}
+1. 冒泡排序
+    ```
+    function maopao(arr){
+        var item;
+        for(var i=0;i<arr.length;i++ ){
+            for(var j=i;j<arr.length;j++){
+                if(arr[j]>arr[j+1]){
+                    item=arr[j]
+                    arr[j]=arr[j+1]
+                    arr[j+1]=item
+                }
+            }
+        }
+    }
+    ```
+1. 全排列
+    ```
+    function swap(array,i,j){
+        var t;
+        t = array[i];
+        array[i] = array[j]; 
+        array[j] = t;
+    }
+    function permutation(ls) {
+        return ls.length ? ls.reduce((acc, x) => acc.concat(permutation(ls.filter(e => e != x)).map(a => [x].concat(a))), []) : [[]];
+    }
+    console.log(permutation([1, 2, 3]));
+    ```
