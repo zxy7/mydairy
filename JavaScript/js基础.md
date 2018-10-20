@@ -250,14 +250,111 @@
     }
     console.log(transDate(nodes,"id","ipid")); 
     ```
-1. promise
-1. ajax异步
-1. hash
+1. ajax，axios，fetch
+    -  ajax异步 async：true默认，对原生XHR的封装，还增添了对JSONP的支持
+        ```
+        ajax({
+            method: 'GET',
+            url: '/',
+            success: function(responseText){}
+        })
+        function ajax(options){
+            let xhr = new XMLHttpRequest()
+            xhr.open(method, url)
+            xhr.onreadystatechange = function(){
+                if(xhr.readyState === 4){
+                if(xhr.status>=200 && xhr.status < 400){
+                    success && success.call(null, xhr.responseText, xhr)
+                }else if(xhr.status >= 400){
+                    error && error.call(null, xhr.status, xhr)
+                }
+                }
+            }
+            xhr.send()
+        }
+        ```
+    - promise实现Axios本质上也是对原生XHR的封装，提供了一些并发请求的接口，客户端支持防止CSRF
+        ```
+        axios({method: 'GET', url: '/x'}).then(SuccessFn1, commonErrorFn)
+        function ajax(options){
+            return new Promise(function(resolve, reject){ 
+                let xhr = new XMLHttpRequest()
+                xhr.open(method, url)
+                xhr.onreadystatechange = function(){
+                    if(xhr.readyState === 4){
+                        if(xhr.status>=200 && xhr.status < 400){
+                            resolve(xhr.responseText) 
+                        }else if(xhr.status >= 400){
+                            reject(xhr) 
+                        }
+                    }
+                }
+                xhr.send()
+            })
+        }
+        ```
+    - fetch 
+    ```
+    try {
+        let response = await fetch(url);
+        let data = response.json();
+        console.log(data);
+    } catch(e) {
+    console.log("Oops, error", e);
+    }
+    ```
+
+
+1. hash和history
+    - hash原理window.onhashchange事件
+    - history原理history api （pushState、replaceState、go、back、forward),在window对象上监听popState()事件
+        ```
+        history.go(-2);//后退两次
+        history.go(2);//前进两次
+        history.back(); //后退
+        hsitory.forward(); //前进
+        ```
 1. computed和watch
+    - computed根据一个变量计算得到另一个属性，计算属性具有缓存，多次访问不必重新执行那个函数，一个数据依赖于其他数据时使用
+    - watch是监听一个值的变化，执行对应函数，在数据变化是做些事情
 1. 异步编程
-    - 回调函数
+    - 回调函数(f2写成f1的回调函数)不利于阅读维护，每个任务只能制定一个回调函数
+        ```
+         function f1(callback){
+             setTimeout(function(){
+                 //f1的代码
+                 callback();
+             },1000);
+         }
+        ```
     - 事件监听
+        事件驱动模式，取决于某个事件是否发生
+        ```
+         function f1(){
+             setTimeout(function(){
+                 //f1的代码
+                 f1.trigger('done');
+             },1000);
+         }
+         f1.on('done',f2)
+        ```
     - 发布/订阅
-    - promise对象
+        ```
+        jQuery.subscribe("done",f2)
+        function f1(){
+            setTimeout(function(){
+                //f1的代码
+                jQuery.publish('done');
+            },1000);
+        }
+        jQuery.unsubscribe("done", f2);
+        ```
+    - promise对象,为异步编程提供统一接口,回调函数变成链式写法，流程很清楚
+    ```
+        f1().then(f2)//then（成功回调函数，失败毁掉函数）
+        f1().then(f2).then(f3);//链式写法是在回调函数执行完后return返回结果作为下一个then的回调函数的参数
+        f1().then(f2).fail(f3);
+    ```
+
 
 
