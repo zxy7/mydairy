@@ -1,0 +1,34 @@
+{
+  "name": "mydairy",
+  "version": "1.0.0",
+  "description": "mydairy",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs",
+    "deploy": "sh build/deploy.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zxy7/mydairy.git"
+  },
+  "keywords": [
+    "typescript",
+    "node",
+    "react",
+    "graphql"
+  ],
+  "author": "zxy7",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zxy7/mydairy/issues"
+  },
+  "homepage": "https://github.com/zxy7/mydairy#readme",
+  "devDependencies": {
+    "vuepress": "^0.14.8"
+  },
+  "dependencies": {}
+}
