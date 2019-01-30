@@ -1,9 +1,10 @@
+# todolist
 1. es2018新功能翻译
 1. js object属性方法
 1. vue双向绑定
 1. ~~银联SSL证书5.28前~~
 1. ~~docker了解一下~~
-1. apply,call,bind区分
+1. ~~apply,call,bind区分~~
 1. dom操作浏览器如何渲染
 1. 文章整理出博客
 1. 开发一个小游戏
@@ -31,4 +32,4 @@
 1. ~~vue-router刷新那点事儿~~
 1. 端口映射是什么鬼
 1. rescontent.getBytes()和Base64.getDecoder().decode(rescontent)
-1. 准备一个微信小游戏讲解
+1. ~~准备一个微信小游戏讲解~~
