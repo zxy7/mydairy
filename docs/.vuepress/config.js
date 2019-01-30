@@ -60,6 +60,11 @@ module.exports = {
         children: ["/java/record", "/java/eclipse使用记录"]
       },
       {
+        title: "翻译",
+        collapsable: true,
+        children: ["/翻译/译-如何扩展SQLErrorCodesFactory", "/翻译/译-Javascript性能测试"]
+      },
+      {
         title: "其他",
         collapsable: true,
         children: ["/other/兼容性"]

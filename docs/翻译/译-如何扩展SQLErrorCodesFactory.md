@@ -1,3 +1,4 @@
+# 译-如何扩展SQLErrorCodesFactory
 > 原文[https://pietrowski.info/2008/09/how-to-extend-sqlerrorcodesfactory/](https://pietrowski.info/2008/09/how-to-extend-sqlerrorcodesfactory/)
 
 我在spring框架中发现了一些有趣的功能。Spring为你提供了将sql错误代码映射到异常类型的功能。默认情况下，spring框架分发文件中有一个名为sql-error-codes.xml的文件，它为常用数据库（DB2，Derby，H2，HSQL，Informix，MS-SQL，MySQL，Oracle，PostgreSQL，Sybase）定义。
