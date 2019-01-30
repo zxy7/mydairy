@@ -52,7 +52,7 @@ module.exports = {
       {
         title: "JavaScript",
         collapsable: true,
-        children: ["/JavaScript/Promise", "/JavaScript/canvas签字板", "/JavaScript/apply-call-bind区分", "/JavaScript/input数据绑定", "/JavaScript/vue-router刷新那点事儿", "/JavaScript/vue双向绑定", "/JavaScript/js基础"]
+        children: ["/javascript/Promise", "/javascript/canvas签字板", "/javascript/apply-call-bind区分", "/javascript/input数据绑定", "/javascript/vue-router刷新那点事儿", "/javascript/vue双向绑定", "/javascript/js基础"]
       },
       {
         title: "java",
