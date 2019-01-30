@@ -2,6 +2,35 @@ module.exports = {
   base: "/mydairy/",
   title: "zanzan学习日记",
   description: "zanzan学习日记",
+  head: [
+    ["link", {
+      rel: "icon",
+      href: `/logo.png`
+    }],
+    ["link", {
+      rel: "manifest",
+      href: "/manifest.json"
+    }],
+    ["meta", {
+      name: "theme-color",
+      content: "#3eaf7c"
+    }],
+    ["meta", {
+      name: "apple-mobile-web-app-capable",
+      content: "yes"
+    }],
+    [
+      "meta",
+      {
+        name: "apple-mobile-web-app-status-bar-style",
+        content: "black"
+      }
+    ],
+    ["meta", {
+      name: "msapplication-TileColor",
+      content: "#000000"
+    }]
+  ],
   themeConfig: {
     repo: "zxy7/mydairy",
     docsDir: "docs",
@@ -18,12 +47,12 @@ module.exports = {
       {
         title: "python",
         collapsable: true,
-        children: ["/python/c#项目的发布", "/python/powerbi报表集成到web项目"]
+        children: ["/python/pdm表结构转json格式", "/python/python学习--文件压缩备份", "/python/第一个python爬虫"]
       },
       {
         title: "JavaScript",
         collapsable: true,
-        children: ["/JavaScript/Promise", "/JavaScript/canvas签字板", "/JavaScript/apply,call,bind区分", "/JavaScript/input数据绑定", "/JavaScript/vue-router刷新那点事儿", "/JavaScript/vue双向绑定", "/JavaScript/js基础"]
+        children: ["/JavaScript/Promise", "/JavaScript/canvas签字板", "/JavaScript/apply-call-bind区分", "/JavaScript/input数据绑定", "/JavaScript/vue-router刷新那点事儿", "/JavaScript/vue双向绑定", "/JavaScript/js基础"]
       },
       {
         title: "java",
