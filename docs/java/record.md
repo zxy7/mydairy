@@ -1,17 +1,17 @@
 ## mybatis传多个参数
-~~~
+~~~xml
 <select id="GetListXXX"  resultType="XXXbean" >
   SELECT * from table where a=#{0} and b= #{1}
 </select>
 ~~~
 ## 传单个参数
-~~~
+~~~xml
 <select id="GetListXXX" parameterType="xxxbean" resultType="XXXbean" >
   SELECT * from table where a=#{paramname}
 </select>
 ~~~
 ## 函数
-~~~
+~~~xml
 <select id="" statementType="CALLABLE" parameterType="xxxbean" resultType="xxxbean" >
   {call functionname(
     #{param1,javaType=int,jdbcType=INTEGER},
@@ -30,7 +30,7 @@
 </select>
 ~~~
 ## mybatis 插入数据时返回主键
-~~~
+~~~xml
 <insert id="" useGeneratedKeys="true" keyProperty="id" parameterType="xxbean">   
   insert into table(parm1,parm2) values (#{parm1}, #{parm2});
 </insert>
@@ -42,7 +42,7 @@
 </insert>
 ~~~
 ## mybatis like查询%
-~~~
+~~~sql
 --all 用$不能防sql注入  
 select * from user where name like '%${name}%'  
   
@@ -59,7 +59,7 @@ select * from user where name like '%'+#{name}+'%'
 select * from user where name like "%"#{name}"%"  
 ~~~
 ## java sleep用法
-~~~
+~~~java
 try { 
   Thread.sleep(8000); 
 } catch (InterruptedException e) { 
@@ -67,7 +67,7 @@ try {
 }
 ~~~
 ## java循环遍历改变集合元素值
-~~~
+~~~java
 // 1.最普通的一种方式，方便增删改
  for(int i = 0;i < size;i++)
 
@@ -82,7 +82,7 @@ try {
 ~~~
 
 ## 日期丢失时分秒
- ~~~ 
+ ~~~
  #{endtime,javaType=java.util.Date,jdbcType=DATE}, 日期无时分秒
 
  #{endtime,javaType=java.util.Date},  

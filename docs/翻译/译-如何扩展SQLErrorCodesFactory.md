@@ -26,12 +26,12 @@
     }
 
 
-![](/img/fy1.png)
+![](/mydairy/img/fy1.png)
 
 
 如果我们在调试模式下运行，我们可以看到类似这样的东西。这是MySQL数据库默认的SQL错误代码定义。现在我们添加'sql-error-codes.xml'文件。我刚刚从默认文件中复制了MySQL bean，并向badSqlGrammarCodes添加了一些代码。这次结果如下所示：
 
-![](/img/fy2.png)
+![](/mydairy/img/fy2.png)
 
 这里是执行日志，有趣的加粗行：
 ```

@@ -1,3 +1,4 @@
+# vue的浏览器兼容问题
 ![http://ruanyf.github.io/es-checker/](http://ruanyf.github.io/es-checker/)可以检测浏览器支持es6性能的百分比
 
 360浏览器兼容模式打开一片空白，控制台报错[vuex] vuex requires a Promise polyfill in this browser. 
@@ -8,7 +9,7 @@
 
 webpack.config.js中添加：
 
-```
+```js
 require('babel-polyfill');
 entry: {
     app: ['babel-polyfill', './src/main.js']
@@ -32,7 +33,7 @@ js中new Date(string)在IE不兼容报错：显示NaN,chrome没问题
 ```new Date("20xx/xx/xx 00:00:00")```
 则可以解决兼容问题（chrome，IE，firefox，opera均测试正常）。
 
-```
+```js
 var str="20xx-xx-xx 00:00:00";
 str.replace(/-/g, "/")   
 ```

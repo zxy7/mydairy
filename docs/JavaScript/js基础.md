@@ -1,24 +1,24 @@
-1. - typeof判断数据类型undefined,number,string,symbol,boolean,object,function,(不能判断null,array)
-   - instanceof检测原型（a.__proto__==b.prototype)
-   - f.constructor == F
-   - Object.prototype.toString.call('')="[object String]"  
-1. _proto_指向创建该对象的构造函数的原型（F.prototype），通过_proto_组成的原型链寻找不属于该对象的属性
-    prototype是每个函数都有的属性
-1. this 指调用函数的对象，构造函数this绑定里他创建的对象，不会改变，call，apply,bind可以改变this指向，箭头函数没有this，他的this取决于外面的函数
-1. Child继承Parent
-    - 构造函数在Child里面Parent.call(this),相当于拷贝Parent，浪费内存，不会继承Parent.prototype
-    - 原型继承Child.prototype=new Parent() ，引用属性会被共享
+# js基础
+1. - `typeof` 判断数据类型`undefined`,`number`,`string`,`symbol`,`boolean`,`object`,`function`,(不能判断`null`,`array`)
+   - `instanceof` 检测原型（`a.__proto__==b.prototype`)
+   - `f.constructor == F`
+   - `Object.prototype.toString.call('')="[object String]" ` 
+1. `_proto_`指向创建该对象的构造函数的原型（`F.prototype`），通过`_proto_`组成的原型链寻找不属于该对象的属性
+    `prototype`是每个函数都有的属性
+1. `this` 指调用函数的对象，构造函数`this`绑定里他创建的对象，不会改变，`call`，`apply`,`bind`可以改变`this`指向，箭头函数没有`this`，他的`this`取决于外面的函数
+1. `Child`继承`Parent`
+    - 构造函数在`Child`里面`Parent.call(this)`,相当于拷贝`Parent`，浪费内存，不会继承`Parent.prototype`
+    - 原型继承`Child.prototype=new Parent()` ，引用属性会被共享
     - 组合
-        - 属性用在Child里面Parent.call(this)，
-        - 方法用Child.prototype =Object.create(Parent.prototype);继承Parent方法，（类似写法Child.prototype = new Parent（)和
-        Child.prototype = Parent.prototype）
-        - Child.prototype.constructor = Child;修复Child的constructor指向
-    - ``` 
+        - 属性用在`Child`里面`Parent.call(this)`，
+        - 方法用`Child.prototype =Object.create(Parent.prototype)`;继承`Parent`方法，（类似写法`Child.prototype = new Parent（)`和 `Child.prototype = Parent.prototype）`
+        - `Child.prototype.constructor = Child`;修复`Child`的`constructor` 指向
+    - ``` js
         class Child extends Parent{
 
        }
        ```
-1. let 不能在声明前使用
+1. `let` 不能在声明前使用
 1. 非匿名的立即执行函数会把函数名当作该函数的内部只读属性
 1. 闭包是函数A return函数B，函数B使用里A的变量，缓存了这个变量
 1. for循环中的定时可以用let定义i，或者用闭包（function（i）{})(i),或者setTimeout的第三个参数i
@@ -33,18 +33,19 @@
 1.  
     - 防抖,防二次点击,边输入边搜索
         - button的disabled属性
-        - ```debounce(func,wait){
+        - ```js
+           debounce(func,wait){
             let timer=0
             return function(...args)=>{
                 if(timer) clearTimeout(timer)
                 timer=setTimeout(()=>{
                     func.apply(this,args)
                 },wait)
-            }
+              }
             }
             ```
     - 节流 每隔一段时间执行
-     - ```
+     - ```js
         throttle(fn,wait,time){
             var timer=null;
             var previous=null;
@@ -66,7 +67,7 @@
        ```
 1. setTimeout 
     - 倒计时
-    ```
+    ```js
     function dida(wait){
         wait--;
         console.log(wait)
@@ -77,7 +78,7 @@
     }
     ```
 1. - 模拟实现call
-    ```
+    ```js
     Function.prototype.mycall=function(context){
         var contenxt=context||window
         context.fn=this
@@ -87,7 +88,7 @@
     }
     ```
     - 模拟实现apply
-    ```
+    ```js
     Function.prototype.myapply=function(context){
         var contenxt=context||window
         context.fn=this
@@ -96,7 +97,7 @@
     }
     ```
     - 模拟bind
-    ```
+    ```js
     Function.prototype.mybind=function(context){
         var me=this
         var args=[...arguments].slice(1)
@@ -195,7 +196,7 @@
 1. 计算属性computed:{xx:{get:function(){},set:function(){}}，基于它们的依赖进行缓存的，
     侦听属性watch:{xx:function(){}}
 1. 冒泡排序
-    ```
+    ```js
     function maopao(arr){
         var item;
         for(var i=0;i<arr.length;i++ ){
@@ -210,7 +211,7 @@
     }
     ```
 1. 全排列
-    ```
+    ```js
     function swap(array,i,j){
         var t;
         t = array[i];
@@ -223,7 +224,7 @@
     console.log(permutation([1, 2, 3]));
     ```
 1. json转树形结构
-    ```
+    ```js
     var nodes = [
         {"id":2,"cname":"第一级1","ipid":0},
         {"id":3,"cname":"第一级1","ipid":2},
@@ -252,7 +253,7 @@
     ```
 1. ajax，axios，fetch
     -  ajax异步 async：true默认，对原生XHR的封装，还增添了对JSONP的支持
-        ```
+        ```js
         ajax({
             method: 'GET',
             url: '/',
@@ -274,7 +275,7 @@
         }
         ```
     - promise实现Axios本质上也是对原生XHR的封装，提供了一些并发请求的接口，客户端支持防止CSRF
-        ```
+        ```js
         axios({method: 'GET', url: '/x'}).then(SuccessFn1, commonErrorFn)
         function ajax(options){
             return new Promise(function(resolve, reject){ 
@@ -294,7 +295,7 @@
         }
         ```
     - fetch 
-    ```
+    ```js
     try {
         let response = await fetch(url);
         let data = response.json();
@@ -308,7 +309,7 @@
 1. hash和history
     - hash原理window.onhashchange事件
     - history原理history api （pushState、replaceState、go、back、forward),在window对象上监听popState()事件
-        ```
+        ```js
         history.go(-2);//后退两次
         history.go(2);//前进两次
         history.back(); //后退
@@ -319,17 +320,17 @@
     - watch是监听一个值的变化，执行对应函数，在数据变化是做些事情
 1. 异步编程
     - 回调函数(f2写成f1的回调函数)不利于阅读维护，每个任务只能制定一个回调函数
-        ```
-         function f1(callback){
-             setTimeout(function(){
-                 //f1的代码
-                 callback();
-             },1000);
-         }
+        ```js
+            function f1(callback){
+                setTimeout(function(){
+                    //f1的代码
+                    callback();
+                },1000);
+            }
         ```
     - 事件监听
         事件驱动模式，取决于某个事件是否发生
-        ```
+        ```js
          function f1(){
              setTimeout(function(){
                  //f1的代码
@@ -339,7 +340,7 @@
          f1.on('done',f2)
         ```
     - 发布/订阅
-        ```
+        ```js
         jQuery.subscribe("done",f2)
         function f1(){
             setTimeout(function(){
@@ -350,7 +351,7 @@
         jQuery.unsubscribe("done", f2);
         ```
     - promise对象,为异步编程提供统一接口,回调函数变成链式写法，流程很清楚
-    ```
+    ```js
         f1().then(f2)//then（成功回调函数，失败毁掉函数）
         f1().then(f2).then(f3);//链式写法是在回调函数执行完后return返回结果作为下一个then的回调函数的参数
         f1().then(f2).fail(f3);

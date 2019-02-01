@@ -1,3 +1,4 @@
+# 科学上网之ss
 以前每次看到做程序员一定要用google这句话，都是不以为然，百度不是一样用嘛，直到用上了google，才会发现，定位bug的能力弱绝不仅是我的问题，也再也没有烦人的垃圾广告。。。。
 
 在此分享我的科学上网经历，望周知
@@ -8,10 +9,10 @@
 推荐我用的一款vpn：[加速度](http://jia.36fy.com/)  ，Windows/Mac/Android/iOS/Linux全平台通用，还不限制登录数量，里面有详细教程！！！！这里不多说，不放心的可以先买个2元试用，800M流量。（这个网址随时会被停用，自行搜索加速度官网）
 
 举个栗子，我在windows电脑上下载了**shadowsocks**软件（纸飞机形状），配置好了服务器，然后启用代理服务器，ok了
-![pc端shadowsocks软件](/img/ss1.png "pc端shadowsocks软件")
+![pc端shadowsocks软件](/mydairy/img/ss1.png "pc端shadowsocks软件")
 
 再举个栗子，在苹果手机上，登录app store，下载好APP： **Shadowrocket**（国内apple id账号下载不了，也搜不到,可自行淘宝，或者知乎如何注册美国apple id，我是开着全局vpn才能不用填付款信息注册的）。
-![Shadowrocket](/img/ss2.png "Shadowrocket")
+![Shadowrocket](/mydairy/img/ss2.png "Shadowrocket")
 
 ## 方案二：自行搭建shadowsocks
 首先，你得有一个国外的服务器，还是得花钱买。

@@ -1,7 +1,7 @@
 # python学习--文件压缩备份
 学习[简明python教程](http://www.kuqin.com/abyteofpython_cn/ch10.html) 时，在编写一个python脚本，解决文件备份压缩的问题上花的时间最长，原因在于zip命令无法执行，其二，源代码文件中 %s 多加了引号
 
-![备份脚本](/img/py1.png )
+![备份脚本](/mydairy/img/py1.png )
 
 
 源代码，圈出来的命令应为zip -qr %s %s
@@ -9,7 +9,7 @@
 
 见如下代码，windows电脑上有效，[github代码](https://github.com/zxy7/py/blob/master/cope.py)
 
-![备份脚本](/img/py2.png )
+![备份脚本](/mydairy/img/py2.png )
 
 **注意**：
 

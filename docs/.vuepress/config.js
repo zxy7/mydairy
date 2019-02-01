@@ -39,25 +39,16 @@ module.exports = {
     activeHeaderLinks: false,
     sidebarDepth: 2,
     lastUpdated: "上次更新",
-    sidebar: [{
-        title: "2019",
-        collapsable: false,
-        children: ["./todolist"]
-      },
+    sidebar: [
+      // {
+      //   title: "2019",
+      //   collapsable: false,
+      //   children: ["./README"]
+      // },
       {
-        title: "python",
+        title: "javascript",
         collapsable: true,
-        children: ["/python/pdm表结构转json格式", "/python/python学习--文件压缩备份", "/python/第一个python爬虫"]
-      },
-      {
-        title: "JavaScript",
-        collapsable: true,
-        children: ["/javascript/Promise", "/javascript/canvas签字板", "/javascript/apply-call-bind区分", "/javascript/input数据绑定", "/javascript/vue-router刷新那点事儿", "/javascript/vue双向绑定", "/javascript/js基础"]
-      },
-      {
-        title: "java",
-        collapsable: true,
-        children: ["/java/record", "/java/eclipse使用记录"]
+        children: ["/javascript/js基础", "/javascript/vue的浏览器兼容问题"]
       },
       {
         title: "翻译",
@@ -65,9 +56,29 @@ module.exports = {
         children: ["/翻译/译-如何扩展SQLErrorCodesFactory", "/翻译/译-Javascript性能测试"]
       },
       {
+        title: "记录",
+        collapsable: true,
+        children: ["/record/命令集合", "/record/小发现", "/record/发现了git的小秘密", "/record/docker配置服务器", "/record/download", "/record/科学上网之ss"]
+      },
+      {
+        title: "微信小程序",
+        collapsable: true,
+        children: ["/微信小程序/小程序记录", "/微信小程序/wx-TLS-https", "/微信小程序/微信小程序讲解"]
+      },
+      {
+        title: "python",
+        collapsable: true,
+        children: ["/python/pdm表结构转json格式", "/python/python学习--文件压缩备份", "/python/第一个python爬虫"]
+      },
+      {
+        title: "java",
+        collapsable: true,
+        children: ["/java/record", "/java/eclipse使用记录", "/java/maven_iview_project"]
+      },
+      {
         title: "其他",
         collapsable: true,
-        children: ["/other/兼容性"]
+        children: ["/other/兼容性", "/other/关于seo"]
       }
     ]
   }

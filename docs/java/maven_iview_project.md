@@ -1,5 +1,5 @@
->### 参考 
->http://wiki.jikexueyuan.com/project/intellij-idea-tutorial/maven-project-introduce.html
+# maven+iview项目搭建
+> 参考:  http://wiki.jikexueyuan.com/project/intellij-idea-tutorial/maven-project-introduce.html
 
 # 一，intellij idea新建maven项目
 * new project > maven >search for webapp (maven-archetype-webapp！！！)>详见参考
