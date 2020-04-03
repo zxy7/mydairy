@@ -9,10 +9,14 @@ loader
 plugin
 
 - OptimizeCSSAssetsPlugin 优化，最小化 css
-- SplitChunks 抽取公有代码
+- SplitChunks 抽取公有代码 cache groups
 - HtmlWebpackPlugin 生成添加了 script 的 html
 - DefinePlugin 创建编译时可配置的全局变量
 - code spliting 按需加载
+- tree shaking
+- scope hoisting
+
+## webpack4
 
 页面分屏 chrome 插件
 vscode 插件 mdlint

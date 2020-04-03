@@ -90,3 +90,19 @@
 1. 捕获异常
    - try catch 不可捕获异步错误
    - window.onError 可捕获异步
+1. 兼容
+   - 样式兼容
+     - Normalize.css 抹平
+     - 加前缀 webpack postcss-loader autoprefixer
+     - ie9 以下 opacity
+   - 交互兼容
+     - addEventListener attachEvent
+     - removeEventListener detachEvent
+     - 日期 '2018-07-05' '2018/07/05'
+   - 浏览器 hack
+1. webpack Scope Hoisting 变量提升
+   tree shaking 怎么判断引入
+1. proxy vue2 object.definproperty
+   vue3 proxy
+1. 造轮子
+1. 兼容方面
