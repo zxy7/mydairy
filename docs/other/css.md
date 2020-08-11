@@ -57,52 +57,136 @@
 - 冒泡 n ～ n2 相邻元素两两比较
 - 插入排序
 
-1. 伪类： :hover :focus :first-child 单冒号
-   伪元素：::before/:before 、 ::first-letter/:first-letter 双冒号
-1. 鉴权：
-   - 发送 http 请求，返回 401，输入用户名密码，通过 base64 加密后把秘文放在请求头 Authorization 里，服务端收到后解密返回 200
-   - cookie session 第一次请求时服务器会在响应头设置 set-cookie，第二次请求时请求头会自动带上 cookie，登出时服务端删 token 缺点：app 端没有 cookie，非 https 下 CSRF 攻击危险
-   - token 用户信息、时间戳和由 hash 算法加密的签名构成，服务端发送，客户端存在 cookie 或者 localstorage 里面，服务端不保存 token，服务端做校验，登出时 localstorage 删除 token
-   - 授权第三方登录
-1. websocket 建立链接，可以双向通信
-   短轮询，常轮询，sse：服务端主动推送
-1. getDerivedStateFromProps
-   getSnapshotBeforeUpdate
-   useEffect= componentDidMount 和 componentDidUpdate ，compontUnMount
-1. Render Props 的核心思想是，通过一个函数将 class 组件的 state 作为 props 传递给纯函数组件
-   React 的高阶组件主要用于组件之间共享通用功能而不重复代码的模式
-1. 静态方法，不能由类创建的实例调用，直接在类上调用
-   实例方法
-1. HTTP 是一个在计算机世界里专门在「两点」之间「传输」文字、图片、音频、视频等「超文本」数据的「约定和规范」。
-   204 响应头无 body
-   301 永久重定向，需要新的 url
-   get 是从服务端请求资源，安全且幂等，只读 ，长度 2-8k
-   post 是传资源到服务端，不安全不幂等，新增、提交修改资源，20M
-   http1.0 短链接
-   http1.1 默认持久链接 keep alive，允许同时发请求，但是响应是按顺序处理，会队头阻塞
-   HTTPS 在 HTTP 与 TCP 层之间增加了 SSL/TLS 安全传输层，HTTP/3 把 TCPP 层换成了基于 UDP 的 QUIC。
-   HTTP 协议 无状态 明文传输，被抓包的话账号密码没了 80
-   https
-   - 在 tcp 三次握手之后，还需进行 SSL/TLS 的握手过程，才可进入加密报文传输。
-   - CA 证书保证服务端是可信的
-   - 端口:443
-   - 采用对称加密和非对称加密结合的混合加密，公钥加密，私钥解密
-1. 捕获异常
-   - try catch 不可捕获异步错误
-   - window.onError 可捕获异步
-1. 兼容
-   - 样式兼容
-     - Normalize.css 抹平
-     - 加前缀 webpack postcss-loader autoprefixer
-     - ie9 以下 opacity
-   - 交互兼容
-     - addEventListener attachEvent
-     - removeEventListener detachEvent
-     - 日期 '2018-07-05' '2018/07/05'
-   - 浏览器 hack
-1. webpack Scope Hoisting 变量提升
-   tree shaking 怎么判断引入
-1. proxy vue2 object.definproperty
-   vue3 proxy
-1. 造轮子
-1. 兼容方面
+1.  伪类： :hover :focus :first-child 单冒号
+    伪元素：::before/:before 、 ::first-letter/:first-letter 双冒号
+1.  鉴权：
+    - 发送 http 请求，返回 401，输入用户名密码，通过 base64 加密后把秘文放在请求头 Authorization 里，服务端收到后解密返回 200
+    - cookie session 第一次请求时服务器会在响应头设置 set-cookie，第二次请求时请求头会自动带上 cookie，登出时服务端删 token 缺点：app 端没有 cookie，非 https 下 CSRF 攻击危险
+    - token 用户信息、时间戳和由 hash 算法加密的签名构成，服务端发送，客户端存在 cookie 或者 localstorage 里面，服务端不保存 token，服务端做校验，登出时 localstorage 删除 token
+    - 授权第三方登录
+1.  websocket 建立链接，可以双向通信
+    短轮询，常轮询，sse：服务端主动推送
+1.  getDerivedStateFromProps
+    getSnapshotBeforeUpdate
+    useEffect= componentDidMount 和 componentDidUpdate ，compontUnMount
+1.  Render Props 的核心思想是，通过一个函数将 class 组件的 state 作为 props 传递给纯函数组件
+    React 的高阶组件主要用于组件之间共享通用功能而不重复代码的模式
+1.  静态方法，不能由类创建的实例调用，直接在类上调用
+    实例方法
+1.  HTTP 是一个在计算机世界里专门在「两点」之间「传输」文字、图片、音频、视频等「超文本」数据的「约定和规范」。
+    204 响应头无 body
+    402 错误是要求付款，你请求的内容不能免费获取
+    301 永久重定向，需要新的 url
+    get 是从服务端请求资源，安全且幂等，只读 ，长度 2-8k
+    post 是传资源到服务端，不安全不幂等，新增、提交修改资源，20M
+    http1.0 短链接
+    http1.1 默认持久链接 keep alive，允许同时发请求，但是响应是按顺序处理，会队头阻塞
+    HTTPS 在 HTTP 与 TCP 层之间增加了 SSL/TLS 安全传输层，HTTP/3 把 TCPP 层换成了基于 UDP 的 QUIC。
+    HTTP 协议 无状态 明文传输，被抓包的话账号密码没了 80
+    https
+    - 在 tcp 三次握手之后，还需进行 SSL/TLS 的握手过程，才可进入加密报文传输。
+    - CA 证书保证服务端是可信的
+    - 端口:443
+    - 采用对称加密和非对称加密结合的混合加密，公钥加密，私钥解密
+1.  捕获异常
+    - try catch 不可捕获异步错误
+    - window.onError 可捕获异步
+1.  兼容
+    - 样式兼容
+      - Normalize.css 抹平
+      - 加前缀 webpack postcss-loader autoprefixer
+      - ie9 以下 opacity
+    - 交互兼容
+      - addEventListener attachEvent
+      - removeEventListener detachEvent
+      - 日期 '2018-07-05' '2018/07/05'
+    - 浏览器 hack
+1.  webpack Scope Hoisting 变量提升
+    tree shaking 怎么判断引入
+1.  proxy vue2 object.definproperty
+    vue3 proxy
+1.  造轮子
+1.  兼容方面
+1.  沉淀技术方案，
+    技术选型，
+    前端工程化，持续发布、webpack、git、代码质量管理 lint/sonar、自动化测试
+    性能优化，seo、fcp、性能调试、ssr、服务器端、
+    容器、docker
+1.  移动端 1 像素问题
+
+    - 伪类 + transform
+      ```css
+      li {
+        position: relative;
+      }
+      li:after {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        content: "";
+        width: 100%;
+        height: 1px;
+        border-top: 1px solid black;
+        transform: scaleY(0.5); //注意兼容性
+      }
+      ```
+    - viewport + rem(ios)
+      判断像素比 devicePixelRatio
+    - box-shadow
+
+    ```css
+    .box-1px {
+      box-shadow: inset 0px -1px 1px -1px black;
+    }
+    ```
+
+1.  选择器
+
+1.可疑区域增加 Try-Catch
+2.全局监控 JS 异常 window.onerror
+3.全局监控静态资源异常 window.addEventListener
+4.捕获没有 Catch 的 Promise 异常：unhandledrejection
+5.VUE errorHandler 和 React componentDidCatch
+6.监控网页崩溃：window 对象的 load 和 beforeunload
+7.跨域 crossOrigin 解决
+
+
+// fps检测
+let fpsObj = {};
+let lastRecord = +new Date();
+(function crt(t) {
+  const fps = t - crt.t;
+  crt.t = t;
+  requestAnimationFrame(crt);
+  if (fps > 20) {
+    const now = +new Date();
+    if (now - lastRecord > 1000) {
+      lastRecord = now;
+      // fps小于50帧/秒记录时间和fps
+      fpsObj[+new Date()] = fps;
+    }
+  }
+})();
+
+/**
+ * 计时器
+ * @param {Funciton} fn 执行函数
+ * @param {Number} delay  延迟时间ms
+ */
+export const animationTimer = (fn, delay) => {
+  let timer = requestAnimationFrame(fnLoop);
+  let sTime = null;
+  async function fnLoop(timeStamp) {
+    let ret = true; // 是否继续
+    if (!sTime || timeStamp - sTime > delay) {
+      sTime = timeStamp;
+      ret = await fn();
+    }
+    // 取消之前的timer对象 避免内存泄露
+    cancelAnimationFrame(timer);
+    if (ret) {
+      timer = requestAnimationFrame(fnLoop);
+    }
+  }
+  return () => timer;
+};

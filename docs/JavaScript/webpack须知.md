@@ -18,5 +18,12 @@ plugin
 
 ## webpack4
 
-页面分屏 chrome 插件
+webpack5 新特性
+
+- 编译提速
+- 应用集群
+- 微前端方案改进
+
+页面分屏，去除广告，视频加速 chrome 插件
 vscode 插件 mdlint
+反爬虫
