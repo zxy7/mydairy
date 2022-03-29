@@ -8,6 +8,7 @@
   },
   "scripts": {
     "dev": "vuepress dev docs",
+    "test": "node ./code/promise.js",
     "build": "vuepress build docs",
     "deploy": "sh build/deploy.sh"
   },
